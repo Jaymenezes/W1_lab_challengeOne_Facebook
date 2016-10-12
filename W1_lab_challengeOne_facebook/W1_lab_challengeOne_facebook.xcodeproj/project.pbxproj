@@ -12,6 +12,11 @@
 		CE63055D1DAE19C70079496D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63055B1DAE19C70079496D /* Main.storyboard */; };
 		CE63055F1DAE19C70079496D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE63055E1DAE19C70079496D /* Assets.xcassets */; };
 		CE6305621DAE19C70079496D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6305601DAE19C70079496D /* LaunchScreen.storyboard */; };
+		CECF20CA1DAE231E007D5F31 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20C91DAE231E007D5F31 /* FeedViewController.swift */; };
+		CECF20CC1DAE232E007D5F31 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20CB1DAE232E007D5F31 /* RequestsViewController.swift */; };
+		CECF20CE1DAE2345007D5F31 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20CD1DAE2345007D5F31 /* MessagesViewController.swift */; };
+		CECF20D01DAE235E007D5F31 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */; };
+		CECF20D21DAE2370007D5F31 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D11DAE2370007D5F31 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CE63055E1DAE19C70079496D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6305611DAE19C70079496D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6305631DAE19C70079496D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECF20C91DAE231E007D5F31 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		CECF20CB1DAE232E007D5F31 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		CECF20CD1DAE2345007D5F31 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		CECF20D11DAE2370007D5F31 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				CE6305571DAE19C70079496D /* AppDelegate.swift */,
 				CE6305591DAE19C70079496D /* ViewController.swift */,
 				CE63055B1DAE19C70079496D /* Main.storyboard */,
+				CECF20D11DAE2370007D5F31 /* MoreViewController.swift */,
+				CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */,
+				CECF20CD1DAE2345007D5F31 /* MessagesViewController.swift */,
+				CECF20CB1DAE232E007D5F31 /* RequestsViewController.swift */,
+				CECF20C91DAE231E007D5F31 /* FeedViewController.swift */,
 				CE63055E1DAE19C70079496D /* Assets.xcassets */,
 				CE6305601DAE19C70079496D /* LaunchScreen.storyboard */,
 				CE6305631DAE19C70079496D /* Info.plist */,
@@ -136,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECF20D21DAE2370007D5F31 /* MoreViewController.swift in Sources */,
+				CECF20CE1DAE2345007D5F31 /* MessagesViewController.swift in Sources */,
 				CE63055A1DAE19C70079496D /* ViewController.swift in Sources */,
+				CECF20CA1DAE231E007D5F31 /* FeedViewController.swift in Sources */,
+				CECF20D01DAE235E007D5F31 /* NotificationsViewController.swift in Sources */,
+				CECF20CC1DAE232E007D5F31 /* RequestsViewController.swift in Sources */,
 				CE6305581DAE19C70079496D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +317,7 @@
 				CE6305681DAE19C70079496D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
