@@ -1,5 +1,5 @@
 //
-//  RequestsViewController.swift
+//  StatusViewController.swift
 //  W1_lab_challengeOne_facebook
 //
 //  Created by user on 10/12/16.
@@ -8,27 +8,25 @@
 
 import UIKit
 
-class RequestsViewController: UIViewController, UIScrollViewDelegate {
-    
-    
+class StatusViewController: UIViewController {
+    @IBOutlet weak var statusCancel: UIButton!
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var requestsPage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        scrollView.delegate = self
-        scrollView.contentSize = requestsPage.frame.size
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onStatusCancel(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
 
     /*
     // MARK: - Navigation

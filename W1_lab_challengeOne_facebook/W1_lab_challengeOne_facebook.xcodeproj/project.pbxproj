@@ -18,6 +18,9 @@
 		CECF20D01DAE235E007D5F31 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */; };
 		CECF20D21DAE2370007D5F31 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D11DAE2370007D5F31 /* MoreViewController.swift */; };
 		CECF20D41DAED098007D5F31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D31DAED098007D5F31 /* DetailViewController.swift */; };
+		CECF20D61DAF0355007D5F31 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D51DAF0355007D5F31 /* StatusViewController.swift */; };
+		CECF20D81DAF0361007D5F31 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D71DAF0361007D5F31 /* PhotoViewController.swift */; };
+		CECF20DA1DAF036A007D5F31 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF20D91DAF036A007D5F31 /* CheckInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		CECF20D11DAE2370007D5F31 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		CECF20D31DAED098007D5F31 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CECF20D51DAF0355007D5F31 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		CECF20D71DAF0361007D5F31 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CECF20D91DAF036A007D5F31 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,19 +73,30 @@
 			isa = PBXGroup;
 			children = (
 				CE6305571DAE19C70079496D /* AppDelegate.swift */,
-				CE6305591DAE19C70079496D /* ViewController.swift */,
 				CE63055B1DAE19C70079496D /* Main.storyboard */,
-				CECF20D11DAE2370007D5F31 /* MoreViewController.swift */,
-				CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */,
-				CECF20CD1DAE2345007D5F31 /* MessagesViewController.swift */,
-				CECF20D31DAED098007D5F31 /* DetailViewController.swift */,
-				CECF20CB1DAE232E007D5F31 /* RequestsViewController.swift */,
-				CECF20C91DAE231E007D5F31 /* FeedViewController.swift */,
+				CECF20DB1DAF0384007D5F31 /* view controlers */,
 				CE63055E1DAE19C70079496D /* Assets.xcassets */,
 				CE6305601DAE19C70079496D /* LaunchScreen.storyboard */,
 				CE6305631DAE19C70079496D /* Info.plist */,
 			);
 			path = W1_lab_challengeOne_facebook;
+			sourceTree = "<group>";
+		};
+		CECF20DB1DAF0384007D5F31 /* view controlers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6305591DAE19C70079496D /* ViewController.swift */,
+				CECF20D11DAE2370007D5F31 /* MoreViewController.swift */,
+				CECF20D51DAF0355007D5F31 /* StatusViewController.swift */,
+				CECF20D71DAF0361007D5F31 /* PhotoViewController.swift */,
+				CECF20D91DAF036A007D5F31 /* CheckInViewController.swift */,
+				CECF20CF1DAE235E007D5F31 /* NotificationsViewController.swift */,
+				CECF20CD1DAE2345007D5F31 /* MessagesViewController.swift */,
+				CECF20D31DAED098007D5F31 /* DetailViewController.swift */,
+				CECF20CB1DAE232E007D5F31 /* RequestsViewController.swift */,
+				CECF20C91DAE231E007D5F31 /* FeedViewController.swift */,
+			);
+			name = "view controlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +178,10 @@
 				CECF20D01DAE235E007D5F31 /* NotificationsViewController.swift in Sources */,
 				CECF20CC1DAE232E007D5F31 /* RequestsViewController.swift in Sources */,
 				CE6305581DAE19C70079496D /* AppDelegate.swift in Sources */,
+				CECF20D61DAF0355007D5F31 /* StatusViewController.swift in Sources */,
 				CECF20D41DAED098007D5F31 /* DetailViewController.swift in Sources */,
+				CECF20DA1DAF036A007D5F31 /* CheckInViewController.swift in Sources */,
+				CECF20D81DAF0361007D5F31 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
