@@ -8,10 +8,15 @@
 
 import UIKit
 
-class NotificationsViewController: UIViewController {
+class NotificationsViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var notificationsScrollView: UIScrollView!
+    @IBOutlet weak var notificationImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        notificationsScrollView.delegate = self
+        notificationsScrollView.contentSize = notificationImage.frame.size
+        
 
         // Do any additional setup after loading the view.
     }

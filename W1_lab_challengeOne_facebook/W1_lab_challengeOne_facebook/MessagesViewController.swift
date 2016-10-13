@@ -8,11 +8,16 @@
 
 import UIKit
 
-class MessagesViewController: UIViewController {
+class MessagesViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var message: UIImageView!
+    
+    @IBOutlet weak var messageScroll: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        messageScroll.delegate = self
+        messageScroll.contentSize = message.frame.size
         // Do any additional setup after loading the view.
     }
 

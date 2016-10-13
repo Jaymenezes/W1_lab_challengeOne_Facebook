@@ -8,10 +8,17 @@
 
 import UIKit
 
-class MoreViewController: UIViewController {
+class MoreViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var settingsImage: UIImageView!
+
+    @IBOutlet weak var settingsScrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        settingsScrollView.delegate = self
+        settingsScrollView.contentSize = settingsImage.frame.size
+        
 
         // Do any additional setup after loading the view.
     }
