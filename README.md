@@ -1,4 +1,3 @@
-# W1_lab_challengeOne_Facebook
 
 # LabOne - *facebook Challenge*
 
@@ -22,8 +21,8 @@ The following **optional** features are implemented:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-
 ![Walkthrough](gif_challengeOne_facebook.gif) 
+
                 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
