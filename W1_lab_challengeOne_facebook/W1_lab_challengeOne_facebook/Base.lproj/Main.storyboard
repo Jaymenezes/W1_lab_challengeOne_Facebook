@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="I27-FC-q8W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="GTb-Uh-OGX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -165,6 +165,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aeb-XN-hmg">
                                         <rect key="frame" x="32" y="407" width="316" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="test"/>
                                         <connections>
                                             <segue destination="ht5-Of-Nwt" kind="push" id="JSr-r5-Fhm"/>
                                         </connections>
@@ -438,6 +439,111 @@
             </objects>
             <point key="canvasLocation" x="602.5" y="38.5"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="dgK-py-5yL">
+            <objects>
+                <viewController id="GTb-Uh-OGX" customClass="LoginViewController" customModule="W1_lab_challengeOne_facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMc-U3-Zom">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="QeL-LK-NSu" userLabel="logo superview">
+                                <frame key="frameInset" minX="65" minY="58" width="246" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="XFa-np-VQk">
+                                        <frame key="frameInset" minX="20" minY="20" width="206" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.17542536556720734" green="0.27097791433334351" blue="0.63489615917205811" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="K0L-uY-o3q">
+                                <frame key="frameInset" minX="17" minY="144" width="343" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="form_bg" id="1hN-5z-WNN">
+                                        <frame key="frameInset" minX="-12" minY="20" width="367" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="h0b-Ut-d8b">
+                                        <frame key="frameInset" minX="27" minY="81" width="290" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="JpY-Xa-qAa">
+                                        <frame key="frameInset" minX="34" minY="35" width="283" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OVn-8y-bkX">
+                                        <frame key="frameInset" minX="12" minY="139" width="318" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="login_button_enabled"/>
+                                        <state key="disabled" image="login_button_disabled"/>
+                                        <state key="selected" image="logging_in_button"/>
+                                        <connections>
+                                            <action selector="didPressLogin:" destination="GTb-Uh-OGX" eventType="touchUpInside" id="RCb-Jk-35d"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" id="Trv-hr-upd">
+                                        <frame key="frameInset" minX="286" minY="155" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign Up for Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VOd-pk-pA5">
+                                <frame key="frameInset" minX="84" minY="562" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" id="tJX-1O-rbW">
+                                <frame key="frameInset" minX="64" minY="591" width="247" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Need Help?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7gI-d8-a6i">
+                                        <frame key="frameInset" minX="20" minY="5" width="206" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12718015909194946" green="0.25502750277519226" blue="0.54609185457229614" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qbb-ls-nva" appends="YES" id="b6H-wZ-ixy"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="labelSuperView" destination="tJX-1O-rbW" id="oLg-hq-f8Z"/>
+                        <outlet property="loginButton" destination="OVn-8y-bkX" id="c1H-EL-uSr"/>
+                        <outlet property="loginIndicator" destination="Trv-hr-upd" id="4Zb-76-RBW"/>
+                        <outlet property="loginSuperView" destination="K0L-uY-o3q" id="MSP-Jk-HEB"/>
+                        <outlet property="loginTextField" destination="JpY-Xa-qAa" id="SdY-Ey-qg2"/>
+                        <outlet property="logoFacebook" destination="XFa-np-VQk" id="gqC-v5-V7k"/>
+                        <outlet property="logoSuperView" destination="QeL-LK-NSu" id="Upw-uo-8Zt"/>
+                        <outlet property="passwordTextField" destination="h0b-Ut-d8b" id="q30-xn-mlm"/>
+                        <segue destination="I27-FC-q8W" kind="modal" identifier="loginSegue" id="vVJ-dZ-9T3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dq4-O6-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qbb-ls-nva">
+                    <connections>
+                        <action selector="onTapGesture:" destination="GTb-Uh-OGX" id="3kZ-hB-UPm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-887" y="1026"/>
+        </scene>
         <!--News Feed-->
         <scene sceneID="yNd-z4-uRg">
             <objects>
@@ -541,9 +647,14 @@
         <image name="create_photo" width="320" height="568"/>
         <image name="create_status" width="320" height="568"/>
         <image name="feed_tab" width="27" height="27"/>
+        <image name="form_bg" width="295" height="95"/>
         <image name="home_feed" width="320" height="1025"/>
         <image name="like_btn" width="17" height="40"/>
         <image name="like_btn_selected" width="17" height="40"/>
+        <image name="logging_in_button" width="293" height="52"/>
+        <image name="login_button_disabled" width="293" height="52"/>
+        <image name="login_button_enabled" width="293" height="52"/>
+        <image name="logo" width="174" height="43"/>
         <image name="messages" width="320" height="460"/>
         <image name="messages_tab" width="27" height="27"/>
         <image name="more_tab" width="27" height="27"/>
